@@ -6,7 +6,7 @@ We developed this software to maintain records of sales, purchase and stock reco
 This project is developed using ASP.NET as front end and SQL Server as Back end. 
 It allows customers to place order(s) for the books, contact the sellers, sell the books, view available stock, cancel the order.
 
-Results:
+Results 📸 :
 
 Form1-
 
