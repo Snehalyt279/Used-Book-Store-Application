@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StockDataSet1" targetNamespace="http://tempuri.org/StockDataSet1.xsd" xmlns:mstns="http://tempuri.org/StockDataSet1.xsd" xmlns="http://tempuri.org/StockDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="StockConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="StockConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LoginForm.Properties.Settings.GlobalReference.Default.StockConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Sales1TableAdapter" GeneratorDataComponentClassName="Sales1TableAdapter" Name="Sales1" UserDataComponentName="Sales1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="StockConnectionString (Settings)" DbObjectName="Stock.dbo.Sales1" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Profit, Loss FROM dbo.Sales1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Profit" DataSetColumn="Profit" />
+              <Mapping SourceColumn="Loss" DataSetColumn="Loss" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StockDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="StockDataSet1" msprop:Generator_UserDSName="StockDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Sales1" msprop:Generator_TableClassName="Sales1DataTable" msprop:Generator_TableVarName="tableSales1" msprop:Generator_TablePropName="Sales1" msprop:Generator_RowDeletingName="Sales1RowDeleting" msprop:Generator_RowChangingName="Sales1RowChanging" msprop:Generator_RowEvHandlerName="Sales1RowChangeEventHandler" msprop:Generator_RowDeletedName="Sales1RowDeleted" msprop:Generator_UserTableName="Sales1" msprop:Generator_RowChangedName="Sales1RowChanged" msprop:Generator_RowEvArgName="Sales1RowChangeEvent" msprop:Generator_RowClassName="Sales1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Profit" msprop:Generator_ColumnVarNameInTable="columnProfit" msprop:Generator_ColumnPropNameInRow="Profit" msprop:Generator_ColumnPropNameInTable="ProfitColumn" msprop:Generator_UserColumnName="Profit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Loss" msprop:Generator_ColumnVarNameInTable="columnLoss" msprop:Generator_ColumnPropNameInRow="Loss" msprop:Generator_ColumnPropNameInTable="LossColumn" msprop:Generator_UserColumnName="Loss" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
