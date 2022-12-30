@@ -1,5 +1,11 @@
 # Used-Book-Store-Application
 Windows Application for buying, selling, donating used books of all kinds.
+
+The purpose of this software is to manage the used books and provide them to the customers at a reasonable rate establishing consensus through the book store. 
+We developed this software to maintain records of sales, purchase and stock records. 
+This project is developed using ASP.NET as front end and SQL Server as Back end. 
+It allows customers to place order(s) for the books, contact the sellers, sell the books, view available stock, cancel the order.
+
 Results:
 
 Form1-
